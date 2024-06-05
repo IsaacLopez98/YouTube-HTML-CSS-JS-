@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: rgb(16, 16, 16);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    padding: 5px;
+    background-color: rgb(16, 16, 16);
+    z-index: 10;
+}
+
+.header .logo-bar {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo-bar .nav-bar {
+    width: 24px;
+}
+
+.header .logo-bar .logo {
+    display: inline-block;
+    width: 120px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.header .container-nav {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header .container-nav:hover {
+    background: #474747;
+}
+
+.header .center {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .center .container-search {
+    width: 100%;
+    border: 1px solid #474747b5;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.header .center .container-search input {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    outline: none;
+    color: #ffffff;
+}
+
+input {
+    background: rgb(16, 16, 16);
+}
+
+.header .center .container-search .button-search {
+    width: 70px;
+    background: #71717150;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #7171717e;
+}
+
+.header .center .container-search .button-search:hover {
+    background: #474747;
+}
+
+.header .center .container-search .button-search img {
+    width: 22px;
+}
+
+.header .center .container-micro {
+    max-width: 37px;
+    width: 100% !important;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    cursor: pointer;
+    background: #71717150;
+    border: 1px solid #474747b5;
+}
+
+.header .center .container-micro:hover {
+    background-color: #474747;
+}
+
+.header .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .end .item-end {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header .end .item-end:hover {
+    background: rgb(16, 16, 16);
+}
+
+.header .end .item-end img {
+    width: 24px;
+    display: inline-block;
+    margin: 0 15px;
+
+}
+
+.header .end img:hover {
+    background: rgb(16, 16, 16);
+}
+
+.header .end .logo-canal {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.bar-lateral {
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 240px;
+    padding-top: 80px;
+    left: 10px;
+    overflow: auto;
+}
+
+.bar-lateral::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+
+.bar-lateral::-webkit-scrollbar-track {
+    background: rgb(16, 16, 16);
+    ;
+}
+
+.bar-lateral::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.bar-lateral::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.bar-lateral .options {
+    list-style: none;
+}
+
+.bar-lateral .options li a img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 24px;
+}
+
+.bar-lateral .options li a {
+    font-size: 14px;
+    color: rgb(16, 16, 16);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.bar-lateral .options li a:hover {
+    background-color: #414141e4;
+}
+
+.bar-lateral hr {
+    margin: 12px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.bar-lateral h3 {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 6px 12px 4px;
+    color: #ffffff;
+}
+
+.bar-lateral #subscriptions li a img {
+    display: block;
+    border-radius: 50%;
+}
+
+.bar-lateral .links {
+    margin-bottom: 20px;
+}
+
+.bar-lateral .links a {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.bar-lateral .google {
+    display: block;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 24px 0;
+}
+
+.little-menu {
+    display: flex;
+}
+
+.little-menu li a {
+    display: block !important;
+    font-size: 10px !important;
+    padding: 10px 0 !important;
+    position: relative;
+    margin-left: 0px !important;
+}
+
+.little-menu li a img {
+    margin-left: 20px !important;
+    text-align: center;
+}
+
+.little-menu li a .text {
+    display: block;
+    text-align: center;
+}
+
+.little-menu li {
+    margin-bottom: 10px;
+}
+
+.videos {
+    position: relative;
+    top: 100;
+    margin-top: 20px;
+    margin-left: 300px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 50px;
+}
+
+.videos .container-item {
+    position: relative;
+    background-color: rgb(16, 16, 16) !important;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.videos .container-item .item {
+    position: absolute;
+    max-width: 360px;
+    background-color: rgb(16, 16, 16);
+    ;
+    transition: .3s;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.videos .item .img-container {
+    position: relative;
+}
+
+.videos .item .img-container img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.videos .item .img-container .time {
+    position: absolute;
+    color: #ffffff;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    width: fit-content;
+    padding: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #000000;
+}
+
+.videos .item .row {
+    display: flex;
+    margin-top: 12px;
+}
+
+.videos .item .row .img-channel img {
+    width: 36px;
+    margin-right: 12px;
+    border-radius: 50%;
+}
+
+.videos .item .row .col .info h3 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.videos .item .row .col .info h3 {
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.videos .item .row .col .info .name-channel {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #606060;
+    margin-bottom: 4px;
+}
+
+.videos .item .row .col .info .metadata {
+    font-size: 14px;
+    color: #606060;
+}
+
+.videos .item .buttons-video {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    display: none;
+    top: 10px;
+    background-color: #fff;
+    padding: 0;
+    z-index: 10;
+}
+
+.videos .item .buttons-video img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.videos .item .buttons-video button {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* clases que se agregan dinámicamente mediante Javascript */
+.on-hover {
+    scale: 1.2;
+    border: 1px solid #666;
+    border-radius: 20px;
+    z-index: 100;
+    height: 380px !important;
+    width: 200% !important;
+
+}
+
+.videos .on-hover:hover .buttons-video {
+    display: flex;
+}
+
+.max-width-videos {
+    margin-left: 120px;
+}
+
+.is-mode-overlay {
+    width: 240px !important;
+    position: absolute !important;
+    z-index: 500 !important;
+}
+
+.ocultar {
+    display: none !important;
+    margin-right: -300% !important;
+    transition: .3s;
+}
+
+.aparecer {
+    margin-right: 0;
+    transition: .3s;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left:250px;
+}
+.tab {
+    background-color: #71717150;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.tab.active {
+    background: #717171db
+}
